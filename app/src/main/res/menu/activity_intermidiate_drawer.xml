@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/stringmenu"
+            android:icon="@drawable/cicon"
+            android:title="স্ট্রিং" />
+        <item
+            android:id="@+id/multiarraymenu"
+            android:icon="@drawable/cicon"
+            android:title="মাল্টিডাইমেনশনাল অ্যারে" />
+        <item
+            android:id="@+id/functionmenu"
+            android:icon="@drawable/cicon"
+            android:title="ফাংশন" />
+        <item
+            android:id="@+id/recursionmenu"
+            android:icon="@drawable/cicon"
+            android:title="রিকার্শন" />
+        <item
+            android:id="@+id/pointermenu"
+            android:icon="@drawable/cicon"
+            android:title="পয়েন্টার" />
+        <item
+            android:id="@+id/structmenu"
+            android:icon="@drawable/cicon"
+            android:title="স্ট্রাকচার" />
+    </group>
+
+</menu>

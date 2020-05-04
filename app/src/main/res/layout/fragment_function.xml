@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Function">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- ফাংশন -"
+                    android:textAlignment="center"
+                    android:textColor="#dadada"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:text="@string/function1"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bdc9cf"
+
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrowpoint1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="লাইব্রেরি ফাংশন ‍pfintf(), sin(), sqrt()‍‍"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#bdc9cf">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrowpoint1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ইউজার ডিফাইনড ফাংশন"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-ইউজার ডিফাইনড ফাংশন-"
+                    android:textAlignment="center"
+                    android:textColor="#dadada"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="monospace"
+                android:text=" প্রথমেই দেখে নিই সি তে ফাংশনের গঠন কেমন হয়। উদাহরণ হিসেবে আমরা একটি ফাংশন লিখব যেটি একটি আয়তক্ষেত্রের ক্ষেত্রফল বের করে। শুরুতেই দেখে নিই ফাংশনের গঠন( সিনট্যাক্স) কেমন হয়:- "
+                android:textSize="17sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#000000"
+                android:padding="10dp">
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:paddingLeft="5dp"
+                        android:text="@string/function2"
+                        android:textColor="#13c117"
+                        android:textIsSelectable="true"
+                        android:textSize="17sp" />
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="monospace"
+                android:text="এবার ব্যাপারটি একটু ব্যাখ্যা করি \t:"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#0686c1"
+                android:text="return_type  \t:"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="#bdc9cf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/function3"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#0686c1"
+                android:text="function_name  \t:"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="#bdc9cf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/function4"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#0686c1"
+                android:text="Parameter list  \t:"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="#bdc9cf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/function5"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textColor="#0686c1"
+                android:text="function body  \t:"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="#bdc9cf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/function6"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:text="এবার আমরা আমাদের ফাংশনটি লিখি। আমরা বলেছি আমরা এমন একটি ফাংশন লিখবো যেটি দিয়ে আয়তক্ষেত্রের ক্ষেত্রফল বের করা যাবে।"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#000000"
+                android:padding="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:paddingLeft="5dp"
+                        android:text="@string/function7"
+                        android:textColor="#13c117"
+                        android:textIsSelectable="true"
+                        android:textSize="17sp" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:text=" এবার Code-টি রান করে  দেখো  ।"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:text=" Code -টি  এবার  ব্যাখ্যা করা যাক : "
+                android:textSize="17sp" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:background="#bdc9cf"
+                android:text="এখানে প্রথমে আমরা result নামের একটি ফাংশন লিখেছি যেটির রিটার্ন টাইপ int এবং এটি দুটি প্যারামিটার গ্রহণ করে। একটি হল length যেটি একটি int ভ্যারিয়েবল, অপরটি width এটিও int । এরপর আমরা ফাংশনটির ভেতরে একটি ভ্যারিয়েবল নিয়েছি যেটির নাম area এটিতে আমরা ক্ষেত্রফল রাখবো। এরপর আমরা ক্ষেত্রফল বের করে সেটিকে রিটার্ন করেছি। main() ফাংশনের ভেতর থেকে আমরা আয়তক্ষেত্রের দৈর্ঘ্য ও প্রস্থ নিয়ে result() ফাংশনটিকে কল করেছি, এবং কল করার সময় length ও width কে প্যারামিটার হিসেবে দিয়েছি। এবং রিটার্ন ভ্যালুটি area নামের একটি ভ্যারিয়েবলে ফেরত নিয়েছি এবং সেটি প্রিন্ট করেছি। কল করা এবং ভ্যালু ফেরত নেওয়ার কাজটি হয়েছে area = find_area(length, width); স্টেটমেন্টে। "
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

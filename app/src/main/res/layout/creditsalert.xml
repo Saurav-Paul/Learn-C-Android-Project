@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333131"
+
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/input_outline"
+    android:padding="10dp">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+    android:textColor="#38d223"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:fontFamily="monospace"
+    android:text="--GoodFellas--"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#38d223"
+        android:textSize="15sp"
+        android:fontFamily="monospace"
+        android:text="-> Soumik Roy"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#38d223"
+        android:textSize="15sp"
+        android:fontFamily="monospace"
+        android:text="-> Saurav Paul"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#38d223"
+        android:textSize="15sp"
+        android:fontFamily="monospace"
+        android:text="-> Md. Ariful Islam"/>
+
+    <TextView
+        android:padding="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#38d223"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="10dp"
+        android:text="Process returned 0 (0x0).\nexecution time : 0.014 s\nTouch outside to continue.\n"/>
+
+</LinearLayout>
+</LinearLayout>

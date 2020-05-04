@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutC"
+    android:background="#ddd"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="সি একটি হাই লেভেল মেশিন প্রোগ্রামিং ল্যাংগুয়েজ যেটা তৈরি করা হয়েছিল ইউনিক্স অপারেটিং সিস্টেম তৈরি করার জন্য৷ ১৯৭২ সালে ডেনিস রিচি সি ল্যাংগুয়েজ ডেভেলপ করেন৷ সব ধরনের ইউনিক্স অপারেটিং সিস্টেম এবং ইউনিক্স সফটওয়্যার সি দিয়ে লেখা৷ সি প্রোগ্রামিং খুব সহজেই শেখা যায়৷ সি ল্যাংগুয়েজ জানা থাকলে অন্যান্য ল্যাংগুয়েজ শিখা অনেকটাই সহজ হয়ে যায়৷ বিভিন্ন অপারেটিং সিস্টেম (যেমন-উইন্ডোজ, আইওএস, লিন্যাক্স ইত্যাদি) থেকে শুরু করে নানা ধরনের সফটওয়্যার নির্মানে সি এর ব্যাপক ব্যবহার রয়েছে। এমনকি 3D মুভি তৈরি করতেও সি ব্যবহৃত হয়। এক কথায়, এমন কোনো ক্ষেত্র নাই যেখানে সি এর পদচারনা নাই।
+স্ট্যান্ডার্ড সি প্রোগ্রাম বহনযোগ্য(portable)। একটি সিস্টেম (যেমন- উইন্ডোজ)-এর জন্য লেখা প্রোগ্রাম কোনো ধরণের পরিবর্তন ছাড়াই অন্য প্লাটফর্ম(যেমন- লিন্যাক্স)-এ কম্পাইল করা যায়। সি এর তুলনায় জাভা, পাইথন এর পার্ফরমেন্স কম।\n\nসি প্রোগ্রাম লেখার জন্য কম্পাইলার এর দরকার হয়৷ কম্পাইলার একটি সাধারন টেক্সট এডিটর এর মত। এর একটি গুরুত্বপূর্ণ বৈশিষ্ট্য আছে৷ কম্পাইলার প্রোগ্রাম এর ভাষাকে মেশিন বা কম্পিউটারের কাছে অর্থপূর্ণ করে তোলে।
+মানে কম্পাইলার প্রোগ্রামিং ল্যাংগুয়েজকে মেশিন ল্যাংগুয়েজে রুপান্তর করে৷ সবচেয়ে জনপ্রিয় কম্পালার হল Code Blocks. তাছাড়া Microsoft Visual C++ দিয়েও সি এর কোড লিখা যায়৷\n\nপ্রোগ্রামিং শিখতে হলে চর্চা করাটা সবচেয়ে জরুরী। তাই অনলাইন জাজগুলো অনেক গুরুত্বপূর্ণ। নিচে কয়েকটি অনলাইন জাজের নাম দেয়া হল।\nuva.onlinejudge.com\nwww.codeforces.com\nwww.codechef.com\nwww.lightoj.com\nwww.topcoder.com\nwww.urionlinejudge.com.br"
+            />
+    </ScrollView>
+
+</LinearLayout>

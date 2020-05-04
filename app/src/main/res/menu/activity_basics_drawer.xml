@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dataTypeMenu"
+            android:icon="@drawable/cicon"
+            android:title="ভ্যারিয়েবল ও ডাটা টাইপ" />
+        <item
+            android:id="@+id/inputOutputMenu"
+            android:icon="@drawable/cicon"
+            android:title="ইনপুট ও আউটপুট" />
+        <item
+            android:id="@+id/ifElseMenu"
+            android:icon="@drawable/cicon"
+            android:title="কন্ডিশনাল লজিক" />
+        <item
+            android:id="@+id/loopMenu"
+            android:icon="@drawable/cicon"
+            android:title="লুপ" />
+        <item
+            android:id="@+id/arrayMenu"
+            android:icon="@drawable/cicon"
+            android:title="অ্যারে" />
+    </group>
+
+
+
+</menu>

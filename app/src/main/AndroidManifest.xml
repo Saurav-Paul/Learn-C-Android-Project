@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.learnc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/clogo5_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/clogo5_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".basics"
+            android:label="@string/title_activity_basics"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Compiler" />
+        <activity
+            android:name=".Intermidiate"
+            android:label="@string/title_activity_intermidiate"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".PracticeList" />
+        <activity android:name=".Problems" />
+        <activity android:name=".InputOutputProblems" />
+        <activity android:name=".ConditonalProblems" />
+        <activity android:name=".LoopProblems" />
+        <activity android:name=".ArrayProblems" />
+        <activity android:name=".RecursiveProblems" />
+        <activity android:name=".Credit" />
+        <activity android:name=".AboutC" />
+        <activity android:name=".SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,886 @@
+<resources>
+    <string name="app_name">Learn C</string>
+    <string name="title_activity_basics">basics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="variable_text1">
+        ভ্যারিয়েবল হলো তথ্য জমা রাখার পাত্র (container) বা স্টোরেজ এরিয়া।
+স্টোরেজ এরিয়াকে নির্দেশ করার জন্য প্রত্যেকটি ভ্যারিয়েবলের একটি ইউনিক নাম দিতে হয় (identifier)।
+মেমোরি লোকেশনকে নির্দেশ করার জন্য ভ্যারিয়েবল হলো একটি সাংকেতিক নাম।\n\nউদাহরণস্বরূপঃ
+    </string>
+    <string name="variableText2">
+        এখানে age হলো একটি ইন্টিজার (integer) টাইপের ভ্যারিয়েবল এবং ইহাতে ভ্যালু রাখা হয়েছে (assign) করা হয়েছে 32।
+ভ্যারিয়েবলের ভ্যালু পরিবর্তন হতে পারে বলেই এর নাম দেওয়া হয়েছে ভ্যারিয়েবল।
+সি প্রোগ্রামিং এ ভ্যারিয়েবল ব্যবহার করার আগেই ভ্যারিয়েবলকে ডিক্লেয়ার (declare) করতে হয়।\n\nসি প্রোগ্রামিং এ ভ্যারিয়েবলের নাম দেয়ার কিছু নিয়মাবলি রয়েছেঃ
+    </string>
+    <string name="variableText3">
+        একটি বৈধ ভ্যারিয়েবলের নামের মধ্যে শুধুমাত্র বর্ণমালা(বড় হাতের বর্ণ বা ছোট হাতের বর্ণ) , ডিজিট(digits) এবং আন্ডারস্কোর(_) থাকতে পারে।
+    </string>
+    <string name="variableText4">ভ্যারিয়েবলের নাম বর্ণ অথবা আন্ডারস্কোর দিয়ে শুরু হতে হবে। তবে আন্ডারস্কোর দিয়ে ভ্যারিয়েবলের নাম শুরু করাকে অনুৎসাহিত করা হয়।
+		কারণ আন্ডারস্কোর দিয়ে শুরু হওয়া ভ্যারিয়েবলের নাম সিস্টেমের নামের সাথে সংঘর্ষ বেধে কিছু সমস্যা দেখা দিতে পারে।</string>
+    <string name="variableText5">ভ্যারিয়েবলের নাম যেকনো দৈর্ঘ্যের হতে পারে। তবে কম্পাইলার প্রথম ৩১ বর্ণ কে ভ্যারিয়েবলের নাম হিসাবে বেছে নেয়।
+		তাই একটি প্রোগ্রামে দুটি ভ্যারিয়েবলের প্রথম ৩১ বর্ণ আলাদা হতে হয়।</string>
+    <string name="dataTypetex1">ডাটা টাইপ দ্বারা ভ্যারিয়েবলের মধ্যে সংরক্ষিত ডাটার টাইপ নির্ধারণ করা হয়।
+সি প্রোগ্রামিং এ ডাটা টাইপ ভ্যারিয়েবল বা মেমোরি লোকেশন (location)-কে ব্যবহারের পূর্বে ডিক্লেয়ার করতে হয়।
+একইভাবে ফাংশনকেও ব্যবহারের পূর্বেই ডিক্লেয়ার (declare) করতে হয়।\nডাটা টাইপ যুক্ত ভ্যারিয়েবল এবং ফাংশন ডিক্লেয়ারেশন দ্বারা সাধারণত ডাটার সাইজ এবং টাইপ নির্ধারণ করা হয়।
+    \n\n*** C ডেটা টাইপ</string>
+    <string name="dataTypetext2">
+        দশমিক(.) সংখ্যা ব্যতীত সকল ধনাত্মক এবং ঋণাত্মক পূর্ণ সংখ্যা এই টাইপের মধ্যে পড়ে। যেমন-  0,-10,10 ইত্যাদি।
+সি প্রোগ্রামিং এ ইন্টেজার টাইপের ভ্যারিয়েবল ডিক্লেয়ার করার জন্য int কীওয়ার্ড ব্যবহৃত হয়।\nউদাহরণস্বরূপঃ
+    </string>
+    <string name="dataType3">
+        এখানে roll_no হলো ইন্টেজার টাইপের ভ্যারিয়েবল।
+সি প্রোগ্রামিং এ আপনি একটি ডিক্লেয়ারেশনের মাধ্যমে অনেক ভ্যারিয়েবলকে একই সঙ্গে ডিক্লেয়ার করতে পারেন।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="dataType4">int ডাটা টাইপের সাইজ  4 byte.\n\n 1 byte = 8 bit.  মানে  4 byte = 32 bit.
+ইন্টিজার ডাটা টাইপের রেঞ্জ -2,147,483,648 থেকে 2,147,483,647.\n\n
+ভ্যারিয়েবলের সাইজ যদি 4 বাইট হয় তাহলে ইহা 2^32 সংখ্যক স্বতন্ত্র ভ্যালু গ্রহণ করতে পারে। যেমন:  -2^31,-2^31+1, ...,-2, -1, 0, 1, 2, ..., 2^31-2, 2^31-1.\n\n
+আপনি যদি 2^31-1 অর্থাৎ +2147483647 থেকে বড় নাম্বার এবং -2^31 অর্থাৎ -2147483648 থেকে ছোট সংখ্যা স্টোর (store)করতে চান তাহলে প্রোগ্রাম ঠিকমত রান (run)করবে না।</string>
+    <string name="datatype5">
+        Character data type বলতে single character (একটি বর্ন যেমন a,N,&amp;,@, ; ,\', ইত্যাদি) বুঝায়।
+        আমাদের কীবোর্ডের প্রত্যেকটি চিহ্নই এক একটা character।
+ক্যারেক্টার টাইপের ভ্যারিয়েবল ডিক্লেয়ার করার জন্য char কীওয়ার্ড ব্যবহৃত হয়।\nউদাহরণস্বরূপঃ
+    </string>
+    <string name="datatype6">
+        এখানে alphabet হলো ক্যারেক্টার ভ্যারিয়েবল এবং alphabet এর ভ্যালু \'a\'।
+ক্যারেক্টার data type এর সাইজ 1 বাইট এবং রেঞ্জঃ -১২৮ থেকে +১২৭ পর্যন্ত।
+    </string>
+    <string name="datatype7">
+        float data type বলতে floating point number (দশমিক সংখা যেমনঃ  ১০.৫, ১.৮, ৫.৬ ইত্যাদি) বুঝায়।
+floating point ডেটা টাইপ দশমিকের পর ৬ ঘর পর্যন্ত নির্ভুল মান দিতে পারে।
+ফ্লোট টাইপের ভ্যারিয়েবল ডিক্লেয়ার (declare) করার জন্য float কীওয়ার্ড ব্যবহার করতে হয়।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="datatype8">
+        এখানে accountBalance ফ্লোটিং টাইপ ভ্যারিয়েবল।
+সি প্রোগ্রামিং এ ফ্লোটিং ভ্যালুকে এক্সপনেনশিয়াল (exponential) ফর্মেও উপস্থাপন করা যায়।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="datatype9">
+        double data type বলতে  Double precision floating point number বুঝায়।
+Double টাইপের ডাটা ব্যবহারের জন্য  double কিওয়ার্ড ব্যবহার করতে হয়।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="datatype10">
+        এটা float data type এর মতোই তবে সাইজ বিশাল।এর সাইজ ৮ বাইট বা ৬৪ বিট। এবং এটি দশমিকের পর ১৪ ঘর পর্যন্ত নির্ভুল মান দিতে পারে।
+    </string>
+
+
+    <string name="iotext1">
+        ইনপুট এবং আউটপুট কার্যাবলী সম্পাদনের জন্য সি প্রোগ্রামিং  বিল্ট-ইন লাইব্রেরী ফাংশন রয়েছে।
+ইনপুট-আউটপুট( I/O) এর জন্য ব্যবহৃত দুটি ফাংশন হলো printf() এবং scanf()।
+ইউজার থেকে formated ইনপুট নেওয়ার জন্য scanf() ফাংশন ব্যবহৃত হয়।
+পক্ষান্তরে formated আউটপুট পাঠানোর জন্য printf() ফাংশন ব্যবহৃত হয়। \n
+    </string>
+    <string name="iotext2">
+         সি প্রোগ্রামের কোন ভ্যারিয়েবলে ফরম্যাটেড আকারে ডেটা ইনপুট বা আউটপুট এর জন্য যথাক্রমেইনপুট ও আউটপুট ফাংশনে
+যে সকল ক্যারেক্টার সেট ব্যবহার করা হয় তাদেরকে format specifier বলে। ( %d,%c,%f,%lf,%s) format specifier এর উদাহরন।\nইনপুট নেয়ার  এর সিনট্যাক্স --
+    </string>
+    <string name="iotext3">
+        Character ইনপুট নেওয়ার জন্য ইনপুট ফাংশনঃ
+    </string>
+    <string name="iotext4">
+        Integer ইনপুট নেওয়ার জন্য ইনপুট ফাংশনঃ
+    </string>
+    <string name="iotext5">
+        Float ইনপুট নেওয়ার জন্য ইনপুট ফাংশনঃ
+    </string>
+    <string name="iotext6">
+        Double ইনপুট নেওয়ার জন্য ইনপুট ফাংশনঃ
+    </string>
+    <string name="iotext7">
+        String ইনপুট নেওয়ার জন্য ইনপুট ফাংশনঃ
+    </string>
+    <string name="iotext8">
+        আউটপুট এর সিনট্যাক্স --
+    </string>
+    <string name="iotext9">
+        Character আউটপুট পাওয়ার জন্য আউটপুট ফাংশনঃ
+    </string>
+    <string name="iotext10">
+        Integer আউটপুট পাওয়ার জন্য আউটপুট ফাংশনঃ
+    </string>
+    <string name="iotext11">
+        Float আউটপুট পাওয়ার জন্য আউটপুট ফাংশনঃ
+    </string>
+    <string name="iotext12">
+        Double আউটপুট পাওয়ার জন্য আউটপুট ফাংশনঃ
+    </string>
+    <string name="iotext13">
+        String আউটপুট পাওয়ার জন্য আউটপুট ফাংশনঃ
+    </string>
+    <string name="iotext14">
+        নিচে একটি সহজ উদাহরন দেয়া হলঃ
+    </string>
+    <string name="iotext15">
+        #include &lt;stdio.h&gt;\n
+        int main()\n
+        {\n
+            \t\tprintf(\"\\tC Programming\\n\");\n
+            \t\treturn 0;\n
+        }\n
+    </string>
+    <string name="iotext16">
+        আউটপুটঃ    C Programming.\n\n\\t ব্যবহারের জন্য প্রোগ্রাম প্রথমে একটি ট্যাব স্পেস (৪টি স্পেস) প্রিন্ট করবে, পরে  C programming প্রিন্ট করবে এবং অবশেষে \n এর জন্য একটি
+        নতুন লাইন প্রিন্ট করবে।  \\t এবং \\n হল Escape Sequence.\nপ্রোগ্রাম কিভাবে কাজ করে তার ব্যাখ্যা নিচে ধাপে ধাপে দেওয়া হলোঃ
+    </string>
+    <string name="iotext17">
+        সকল সি প্রোগ্রামে অবশ্যই main() ফাংশন থাকতে হবে। main() ফাংশনের প্রথম থেকে কোড এক্সিকিউশন (execution) শুরু হয়।
+    </string>
+    <string name="iotext18">
+        printf() হলো লাইব্রেরী ফাংশন যা স্ক্রিনে ফরম্যাটেড (formated) আউটপুট পাঠায়। "stdio.h" হেডার ফাইলে printf(), scanf() ফাংশন ডিক্লেয়ার করা আছে।
+    </string>
+    <string name="iotext19">
+        এখানে stdio.h হলো স্টান্ডার্ড ইনপুট-আউটপুট হেডার (header) ফাইল এবং #include হলো প্রিপ্রোসেসর (preprocessor)যা হেডার ফাইলকে
+        সোর্স কোডের সংযুক্ত করে। কম্পাইলার যখন printf() ফাংশনকে এক্সিকিউট করে এবং stdio.h হেডার ফাইলকে খুঁজে না পায় তাহলে কম্পাইলার error দেখায়।
+    </string>
+    <string name="iotext20">
+        return 0; স্টেটমেন্ট এর মাধ্যমে প্রোগ্রাম থেকে বের হয়ে যায়। সহজ ভাষায় প্রোগ্রামের সমাপ্তি ঘটায়।
+    </string>
+
+
+    <string name="conditional1">
+        কন্ডিশনাল লজিক হল প্রোগ্রামে কী দিলে কী হবে সেটার শর্ত। সিদ্ধান্ত গ্রহণের জন্য প্রোগ্রামিং এ সচরাচর কন্ডিশনাল(conditional) স্টেটমেন্ট ব্যবহৃত হয়।
+        \n\nসি তে কন্ডিশন চেক করার জন্য বিভিন্ন ধরনের অপারেটর রয়েছে।নিচের টেবিলে অপারেটর গুলোর কাজ দেয়া আছে।এগুলো থেকে
+        কন্ডিশনাল অপারেটর সম্পর্কে মোটামুটি ধারণা হতে পারে।
+    </string>
+    <string name="conditional2">
+
+        if (condition)\n{\n// এই কোড এক্সিকিউট হবে। \n}\n
+    </string>
+    <string name="conditional3">
+        এখানে প্রোগ্রাম প্রথমে if এর মধ্যকার condition-কে চেক করে।
+        condition যদি True হয় তাহলে if ব্লকের মধ্যে অবস্থিত স্টেটমেন্ট/স্টেটমেন্টসমূহ সম্পাদিত হবে।
+condition যদি False(শূন্য) হয় তাহলে if ব্লকের মধ্যে অবস্থিত স্টেটমেন্ট/স্টেটমেন্টসমূহ এড়িয়ে যাবে।
+    </string>
+    <string name="conditional4">
+        যেমন একটা প্রোগ্রাম যেটা ইউজার থেকে একটা ইন্টিজার ইনপুট নিয়ে চেক করবে সেটা জোড় না
+        বিজোড়ঃ
+    </string>
+    <string name="conditional5">
+        #include&lt;stdio.h&gt;\nint main();\n{\n\t\tint n;\n\t\tprintf(\"Enter an integer : \");\n\t\tscanf(\"%d\",&amp;n);\n\t\tif(n%2==0)\n\t\t\t\tprintf(\"%d is even\\n\",n);\n\t\treturn 0;\n}
+    </string>
+    <string name="conditional6">
+      এখানে প্রথমে ইন্টিজার n ইনপুট নেয়া হচ্ছে।তারপর দেখা হচ্ছে n কে 2 দ্বারা ভাগ করলে ভাগশেষ শূন্য কিনা,শূন্য হলে প্রিন্ট করা
+        হচ্ছে যে n একটা জোড়(odd) সংখ্যা।\n
+        এখানে স্টেটমেন্ট এক লাইনের হওয়ায় স্টেটমেন্টকে দ্বিতীয় বন্ধনীর মধ্যে রাখার প্রয়োজন হয়নি।
+        কিন্তু একাধিক লাইনের স্টেটমেন্টের ক্ষেত্রে স্টেটমেন্টকে দ্বিতীয় বন্ধনী দিয়ে আবদ্ধ করা আবশ্যক।\n
+        এবার জোড় সংখ্যার কোডটা নিজের মত টাইপ করে রান করে দেখো।
+    </string>
+    <string name="conditional7">
+        #include&lt;stdio.h&gt;\nint main();\n{\n\t\tint n;\n\t\tprintf(\"Enter an integer : \");\n\t\tscanf(\"%d\",&amp;n);\n\t\tif(n%2==0)\n\t\t\t\tprintf(\"%d is even\\n\",n);\n\t\telse if(n%2!=0)\n\t\t\t\tprintf(\"%d is odd\\n\",n);\n\t\treturn 0;\n}
+    </string>
+    <string name="conditional8">
+      if স্টেটমেন্ট এর কন্ডিশন ট্রু না হলে প্রোগ্রাম if এর স্টেটমেন্টে ঢুকবে না।এক্ষেত্রে if স্টেটমেন্টের পরে যদি else if
+        কন্ডিশন দেয়া হয়,তাহলে প্রোগ্রাম প্রথমে else if এর কন্ডিশনের সত্যতা যাচাই করবে।তারপরের কাজ if এর মতোই।\n\n
+        উপরের জোড় সংখ্যা চেক করার কোডটাতে যদি else if ব্যবহার করা হয়,কোডটা দাড়ায়ঃ
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="conditional9">
+
+        if (condition)\n{\n// এই কোড এক্সিকিউট হবে। \n}\nelse if(condition)\n{\n// if এর কন্ডিশন
+        ট্রু না হলে এবং else if এর\n //কন্ডিশন ট্রু হলে এই কোড এক্সিকিউট হবে। \n}
+    </string>
+    <string name="conditional10">
+      এখানে বেশি কিছুই না,শুধু if এর কন্ডিশন যদি ট্রু না হয় অর্থাৎ সংখ্যাটাকে ২ দিয়ে ভাগ করলে ভাগশেষ শূন্য না হয় তাহলে
+        কি হবে বলে হয়েছে।এক্ষেত্রে else if এর ব্যবহার করা হয়েছে।\n
+        এবার কোডটা রান করো।
+    </string>
+    <string name="conditional11">
+if (condition) {\n
+    // True হলে এই কোড এক্সিকিউট হবে। \n
+}\n
+else {\n
+    // False হলে এই কোড এক্সিকিউট হবে। \n
+}
+    </string>
+    <string name="conditional12">
+condition True হলে if স্টেটমেন্টের কোড ব্লক এক্সিকিউট হবে এবং else স্টেটমেন্টের কোড ব্লককে এড়িয়ে যাবে।\n
+
+condition false হলে else স্টেটমেন্টের কোড ব্লক সম্পাদিত হবে এবং if স্টেটমেন্টের কোড ব্লককে এড়িয়ে যাবে।\n
+        এককথায় উপরের সব কন্ডিশন ফলস হলেই else এর স্টেটমেট এর কাজ হবে।
+        জোড় সংখ্যা চেক করার কোডটাতে যদি else if এর বদলে else ব্যবহার করা হয়,তাহলে কি হয় দেখা যাক।
+    </string>
+    <string name="conditional13">
+        #include&lt;stdio.h&gt;\nint main();\n{\n\t\tint n;\n\t\tprintf(\"Enter an integer : \");\n\t\tscanf(\"%d\",&amp;n);\n\t\tif(n%2==0)\n\t\t\t\tprintf(\"%d is even\\n\",n);\n\t\telse\n\t\t\t\tprintf(\"%d is odd\\n\",n);\n\t\treturn 0;\n}
+    </string>
+    <string name="conditional14">
+        খুব সহজ,if এর কন্ডিশন ফলস হলে বা n যদি ২ দ্বারা ভাগ না যায় তাহলে কোনো কন্ডিশন চেক না করেই else
+        এর স্টেটমেন্টের কাজ হয়ে যাবে।
+        \n
+        if আর else এর কাজ ভিজুয়ালাইজ করতে নিচের ফ্লোচার্টটা দেখতে পারো।
+    </string>
+
+
+    <string name="loop8">//Program to print 1 to 10 \n#include&lt;stdio.h&gt;\n
+int main()\n
+{\n
+   \tint i=1;\n
+   \tdo{\n
+    \t\t\tprintf(\"%d\\n\",i);\n
+    \t\t\ti++;\n
+   }while(i&lt;=10);\n
+    \treturn 0;\n
+}
+</string>
+    <string name="loop7">do\n
+{\n
+ \t\t\t  // statement\n
+}\n
+while (condition);
+</string>
+    <string name="loop6">//Program to print 1 to 10\n#include&lt;stdio.h&gt;
+        \nint main()\n{\n
+   \tint i=1;\n
+  \t while(i&lt;=10)\n{\n
+   \t\t\t printf(\"%d\\n\",i);\n
+   \t\t\t i++;\n
+   }\n
+   \t return 0;\n
+}
+</string>
+    <string name="loop5">while (condition) \n
+{\n
+  \t\t\t  //statement \n
+}</string>
+    <string name="loop4">//Program to print 1 to 10\n#include&lt;stdio.h&gt;\n
+int main()\n
+{\n
+   \t int i;\n
+   \t for(i=1; i&lt;=10; i++)\n
+   \t {\n
+       \t \t\t\tprintf(\"%d\\n\",i);\n
+   \t }\n
+   \t return 0;\n
+}
+</string>
+    <string name="loop3"> তারপরে condition এক্সিকিউট হয়। ইহা false(0) হলে for লুপের সমাপ্তি ঘটে। কিন্তু টেস্ট এক্সপ্রেশনের ভ্যালু যদি True হয় তাহলে for লুপের কোড ব্লক এক্সিকিউট হয় এবং increment/decrement এর ভ্যালু আপডেট হয়।</string>
+    <string name="loop1">কোনো নির্দিষ্ট কোড ব্লককে রিপিট(repeat) করার জন্য প্রোগ্রামিং এ লুপ(loop) ব্যবহৃত হয়। এই অধ্যায়ে  সি প্রোগ্রামিং এ for লুপ তৈরি করা শিখবে । সোজা কথায় একই কাজ বার বার করার জন্য বা রিপিট করার লুপ ব্যবহার করা হয় ।\n
+
+\nকন্ডিশন(condition) মিথ্যা না হওয়া পর্যন্ত কোনো কোড ব্লককে রিপিট(repeat) করার জন্য প্রোগ্রামিং এ লুপ ব্যবহৃত হয়। সি প্রোগ্রামিং এ তিন ধরণের লুপ রয়েছেঃ
+</string>
+    <string name="loop2"> for(intialization ; condition ; increment/decrement)\n
+{\n
+		\t\t//statement;\t
+
+}\t</string>
+
+
+    <string name="arraytext1">
+        একই টাইপের একের অধিক ভ্যারিয়েবল নিয়ে কাজ করার জন্য প্রোগ্রামিং এ আমরা অ্যারে (Array) ব্যবহার করি।
+Array হলো একটি বিশেষ ধরনের ভেরিয়েবল যার মধ্যে একসঙ্গে একই টাইপের নির্দিষ্ট সংখ্যক ভ্যালু জমা রাখা যায়।
+১০০০ জন ছাত্রের পরীক্ষার মার্ক সংগ্রহ করে রাখার জন্য সিঙ্গেল ভ্যারিয়েবলের পরিবর্তে array ভ্যারিয়েবল ব্যবহার করা অনেক কার্যকরি।\nসি প্রোগ্রামিং এ দুই ধরণের array রয়েছেঃ
+    </string>
+    <string name="arraytext2">
+        One-dimensional array
+    </string>
+    <string name="arraytext3">
+        Multidimensional array
+    </string>
+    <string name="arraytext4">
+        Array ডিক্লেয়ারেশনের সিনট্যাক্সঃ
+    </string>
+    <string name="arraytext5">
+        Array ব্যবহার করার জন্য প্রথমে Array ডিক্লেয়ার করতে হয়। Array অন্যান্য সাধারণ ভ্যরিয়েবলের মতই ডিক্লেয়ার করা হয়।\nযেমনঃ
+    </string>
+    <string name="arraytext6">
+        ডেটা টাইপে বলে দিতে হয় অ্যারেতে আমরা কি ধরনের ডেটা রাখব। যদি ইণ্টিজার রাখি তাহলে হবে int, যদি ক্যারেক্টার রাখি তাহলে বলে দিতে হবে char।
+ইন্টিজার অ্যারেতে কারেক্টার রাখা যাবে না। আবার ইন্টিজার অ্যারেতে ফ্লোটিং পয়েন্টও রাখা যাবে না।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="arraytext7">
+        এখানে mark নামের এবং ফ্লোটিং পয়েন্ট টাইপের একটি array ভ্যারিয়েবল ডিক্লেয়ার করা হয়েছে যার সাইজ 100. সুতরাং ইহা 5 টি দশমিক (float) ভ্যালু গ্রহণ করতে পারে।
+সি প্রোগ্রামিং এ Array ডিক্লেয়ারেশনের পরে array এর টাইপ এবং দৈর্ঘ্য পরিবর্তন করা যায় না।
+    </string>
+    <string name="arraytext8">
+        Array এর এলিমেন্টকে এক্সেস করার নিয়মঃ
+    </string>
+    <string name="arraytext9">
+        ইনডেক্স (index) ব্যবহার করে Array এর এলিমেন্টকে এক্সেস করা হয়।
+ধরি, উপরের mark অ্যারেটি ডিক্লেয়ার করা আছে। তাহলে mark এর এলিমেন্ট-সমূহকে এক্সেস করার জন্য প্রথম এলিমেন্টের ক্ষেত্রে  mark[0],
+দ্বিতীয় এলিমেন্টের ক্ষেত্রে  mark[1] লিখতে হবে এবং এভাবে চলতে থাকবে।
+    </string>
+    <string name="arraytext10">
+        Array সম্পর্কে কিছু গুরুত্বপূর্ন কথা--
+    </string>
+    <string name="arraytext11">
+        Array এর ইনডেক্সিং 1 এর পরিবর্তে 0 দিয়ে শুরু হয়। উপরের উদাহরণে array এর প্রথম এলিমেন্টটি হলোঃ mark[0]
+    </string>
+    <string name="arraytext12">
+        Array এর সাইজ যদি n হয় তাহলে এর শেষ এলিমেন্টকে এক্সেস করার জন্য (n-1) ইনডেক্স ব্যবহার করা হয়। উপরের উদাহরণে array
+	    এর সাইজ ৫ তাই শেষ এলিমেন্টকে mark[4] এর মাধ্যমে এক্সেস করা হয়েছে।
+        ধরি, mark[0] এর এড্রেস 8024a দ্বারা শুরু হয়েছে তাহলে  mark[1] এর এড্রেস হবে 8028a এবং mark[2] এর এড্রেস হবে 8032a,
+        কারণ ফ্লোট ভ্যারিয়েবলের সাইজ ৪(চার) বাইট।
+    </string>
+    <string name="arraytext13">
+        Array ইনিশিয়ালাইজেশনঃ
+    </string>
+    <string name="arraytext14">
+        	ডিক্লেয়ারেশনের সময়ও array ভ্যারিয়েবলকে ইনিশিয়ালাইজ (initialize) করা যায়। অর্থাৎ ডিক্লেয়ারেশনের সময় array তে ভ্যালু এসাইন করা যায়।\nউদাহরণস্বরূপঃ  ডিক্লেয়ারেশনের সময় সাইজসহ array ইনিশিয়ালাইজেশন (initialization)
+    </string>
+    <string name="arraytext15">
+    ডিক্লেয়ারেশনের সময় সাইজ ছাড়া array ইনিশিয়ালাইজেশন (initialization)
+    </string>
+    <string name="arraytext16">
+        Array ইনিশিয়ালাইজেশন এর Table:
+    </string>
+    <string name="arraytext17">
+        এখানে, mark[0] এর ভ্যালু 89\n mark[1] এর ভ্যালু  80\n mark[2] এর ভ্যালু  88\n mark[3] এর ভ্যালু  83\n mark[4] এর ভ্যালু  90
+    </string>
+    <string name="arraytext18">
+        Array এক্সেস করাঃ
+    </string>
+    <string name="arraytext19">
+        Array এর কোন উপাদান বের করাকে বলে Array এক্সেস। অ্যারের ইন্ডেক্সিং শুরু হয় ০ থেকে।\nনিচের অ্যারেটি দেখিঃ
+    </string>
+    <string name="arraytext20">
+        এই অ্যারেটির প্রথম উপাদান মানে ০তম ইন্ডেক্সে রয়েছে ২। দ্বিতীয় উপাদান বা ১ম ইন্ডেক্সে রয়েছে ৩। এভাবে চতুর্থ উপাদান বা ৩তম ইন্ডেক্সে রয়েছে ১১।\n\n
+        আমরা যদি লিখি array[0],প্রোগ্রাম আমাদের ২ রিটার্ণ করবে। যদি লিখি  array[1], এটি রিটার্ণ করবে 3। array[3] লিখলে রিটার্ণ করবে 11। নিচের প্রোগ্রামটি দেখিঃ
+    </string>
+    <string name="arraytext21">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tint array[5] = {2, 3, 5, 7, 11};\n
+        \t\tprintf(\"%d\",array[0]);\n
+        \t\treturn 0;\n}
+    </string>
+    <string name="arraytext22">
+        উপরের প্রোগ্রামে আমরা অ্যারের একটা ইলিম্যান্টই শুধু প্রিন্ট করেছি। তুমি এখন printf ফাংশনের ভেতরে লেখা array[0] এর পরিবর্তে 1, 2, 3 ইত্যাদি লিখে দেখ।
+দেখবে একবার এক একটা ইনডেক্সের ইলিমেন্ট প্রিন্ট করবে।\n\nআমরা যদি অ্যারের সব গুলো ইলিমেন্ট এক্সেস করতে চাই, তাহলে লুপ ব্যবহার করতে পারি।\nযেমনঃ
+    </string>
+    <string name="arraytext23">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tint i;\n
+        \t\tint array[5] = {2, 3, 5, 7, 11};\n
+        \t\tfor(i=0; i&lt;5; i++){\n
+        \t\t\t\t\tprintf(\"%d \",array[i]);\n
+         \t\t}\n
+        \t\treturn 0;\n}
+    </string>
+    <string name="arraytext24">
+        এখানে যদি আমাদের অ্যারেতে একশটিও ভ্যারিয়েবল থাকে, আমরা সহজেই তা এক্সেস করতে পারব। শুধু i&lt;5 এর পরিবর্তে i&lt;100 লিখলেই হবে।\n\nআমরা এখন
+        একটা প্রোগ্রাম চিন্তা করি যেটা ইউজার থেকে ৬টা নাম্বার নিবে এবং পরে তা যোগ করে রেজাল্ট আমাদের দেখাবে। এটা সাধারন পদ্ধতিতে করতে গেলে আমাদের আগে
+        ৬টা ভ্যারিয়েবল নিতে হত, তারপর সেগুলোকে যোগ করতে হত তারপর যোগফল দেখাতে হতো।\nএখন আমরা কত সহজেই এ জিনিসটা করতে পারব মাত্র
+        একটি ভ্যারিয়েবল নিয়ে।
+    </string>
+    <string name="arraytext25">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tint Number[6];\n
+        \t\tint i, result=0;\n
+
+        \t\tfor(i=0; i&lt;6; i++){\n
+        \t\t\t\t\tprintf(\"Enter %d no Number:\\n\", i+1);\n
+        \t\t\t\t\tscanf(\"%d\", &amp;Number[i]);\n
+        \t\t\t\t\tresult = result+Number[i];\n
+         \t\t}\n
+
+         \t\tprintf(\"Result is: %d\", result);\n
+         \t\treturn 0;\n}
+    </string>
+    <string name="arraytext26">
+        এই প্রোগ্রামটি ইউজার থেকে নেয়া ৬টি ইলিমেন্টের যোগফল প্রিন্ট করবে।\nআমরা চাইলে কোন কোন নাম্বার গুলো ব্যবহারকারী ইনপুট দিয়েছে,
+        সেগুলো প্রিন্টও করতে পারি:
+    </string>
+    <string name="arraytext27">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tint Number[6];\n
+        \t\tint i, result=0;\n
+
+        \t\tfor(i=0; i&lt;6; i++){\n
+        \t\t\t\t\tprintf(\"Enter %d no Number:\\n\", i+1);\n
+        \t\t\t\t\tscanf(\"%d\", &amp;Number[i]);\n
+        \t\t\t\t\tresult = result+Number[i];\n
+         \t\t}\n
+
+         \t\tprintf(\"Result is: %d \\n\", result);\n
+
+        \t\tfor(i=0; i&lt;6; i++){\n
+        \t\t\t\t\tprintf(\"Array element %d is: %d\\n\", i,Number[i]);\n
+         \t\t}\n
+         \t\treturn 0;\n}
+    </string>
+    <string name="arraytext28">
+
+উপরের প্রোগ্রামটি প্রথমে ৬টি ইনপুট ভ্যালু যোগফল প্রিন্ট করবে এবং পরে Number অ্যারেতে স্টোর করা ৬টি ইলিমেন্ট প্রিন্ট করবে।
+    </string>
+    <string name="title_activity_intermidiate">Intermidiate</string>
+
+
+    <string name="multiarray1">
+        এর আগে যেধরনের অ্যারে নিয়ে আলোচনা করা হয়েছিল সেগুলো ডাইমেনশন বা মাত্রা ছিল একটাই।সি ল্যাঙ্গুয়েজে একাধিক ডাইমেনশনের অ্যারের ব্যবহারও রয়েছে।\n\n
+মাল্টিডাইমেনশনাল অ্যারে বললে বুঝায় অ্যারের অ্যারে।দুই বা তিন ডাইমেনশনের অ্যারে হতে পারে।এখানে আমরা আপাতত শুধু টু ডাইমেনশনাল অ্যারে নিয়ে আলোচনা করব।\n\n
+গণিতে ম্যাট্রিক্স পড়ে থাকলে টু ডাইমেনশনাল অ্যারে সহজেই বুঝতে পারার কথা।কারণ টুডি অ্যারে এক ধরনের ম্যাট্রিক্সই।একটা উদাহরণ দেখা যাকঃ
+
+    </string>
+    <string name="multiarray2">
+        এই a হচ্ছে একটা টু ডাইমেনশনাল অ্যারে,যেখানে তৃতীয় বন্ধনীর মধ্যকার প্রথম সংখ্যাটা দ্বারা অ্যারের সারি এবং দ্বিতীয় সংখ্যা দ্বারা অ্যারের কলাম সংখ্যা বুঝায়।
+        অর্থাৎ a অ্যারেটায় ৩ টা সারি আর ৪ টা কলাম আছে।যার মানে,এই অ্যারের মোট এলেমেন্ট ৩*৪=১২ টা।নিচের টেবিলটাকে x অ্যারে হিসেবে চিন্তা করতে পারোঃ
+    </string>
+    <string name="multiarray3">
+        আগে যেমন বলা হয়েছিল,টু ডাইমেনশনাল অ্যারে হচ্ছে অ্যারের অ্যারে।
+        এইখানে c ইনিশিয়ালাইজ করার সময় প্রত্যেকটা সারির জন্য কলামের দৈর্ঘ্যের সমান একটা করে অ্যারে এসাইন করা হয়েছে।\nএভাবেও ইনিশিয়ালাইজ করা যায়ঃ
+    </string>
+    <string name="multiarray4">
+        int c[][3] = {{1, 3, 0}, {-1, 5, 9}};\n\nint c[2][3] = {1, 3, 0, -1, 5, 9};\n
+    </string>
+    <string name="multiarray5">
+        টু ডি অ্যারে ইনপুট নেয়ার ক্ষেত্রে নেস্টেড লুপ ব্যবহার করা হয়।একটা লুপ সারিগুলোর জন্য,আর প্রত্যেকটা সারিতে কলামগুলো নেয়ার জন্য আরেকটা লুপ।
+        আউটপুট একইভাবে হয়।\nনিচের উদাহরণটা দেখলে স্পষ্ট হবেঃ
+    </string>
+    <string name="multiarray6">
+
+        #include &lt;stdio.h&gt;\n
+
+int main()\n
+{\n
+    \t\tint array[5][5],i,j,row=5,column=5;\n
+    \t\tprintf(\"Enter the values of the elements : \");\n
+    \t\tfor (i = 0; i &lt; row; ++i) {\n
+        \t\t\t\tfor(j = 0; j &lt; column;++j) {\n
+            \t\t\t\t\t\t\t\tscanf("%d", &amp;array[i][j]);\n
+        \t\t\t\t}\n
+    \t\t}\n
+
+    \t\tprintf(\"\\nDisplaying values: \\n\\n\");\n
+    \t\tfor (int i = 0; i &lt;row;++i) {\n
+        \t\t\t\tfor(int j = 0; j &lt; column;++j)\n
+        \t\t\t\t{\n
+            \t\t\t\t\t\t\t\tprintf(\"%d %d\\n\", array[i][j]);\n
+        \t\t\t\t}\n
+    \t\t}\n
+    \t\treturn 0;\n
+}
+    </string>
+
+
+    <string name="function7">#include&lt;stdio.h&gt;\n\n
+        //function declaration\n
+int result(int length, int width)\n{\n
+\t\tint area;\n
+\t\tarea=length * width;\n
+\t\treturn area;\n
+}\n\n
+        //main function\n
+int main()\n{\n
+\t\tint area, length, width;\n
+\t\tprintf(\"Enter the length and width of the rectangle: \");\n
+\t\tscanf(\"%d%d",&amp;length,&amp;width);\n//user define function calling\n
+\t\tarea=result(length,width);\n
+
+\t\tprintf(\"The area of the rectangle is : %d\\n\",area);\n
+\t\treturn 0;\n
+}
+</string>
+    <string name="function6">ফাংশন বডিতে আমরা আমরা ফাংশনটি কি কি ইনস্ট্রাকশন এক্সিকিউট করবে সেটি লিখব। যেমন ক্ষেত্রফল বের করার জন্য আমরা দৈর্ঘ্য ও প্রস্থ গুণ করব।এরপর আমরা ক্ষেত্রফলটি ফেরত পাঠাবো বা রিটার্ন দেব। এটিই হবে ফাংশনের রিটার্ন ভ্যালু। রিটার্ন ভ্যালুর ডেটা টাইপ এবং return_type একই হতে হবে।</string>
+    <string name="function5">ফাংশনটিতে আমরা যে ভ্যালুগুলো নিয়ে কাজ করতে পাঠাবো সেগুলো থাকে প্যারামিটার লিস্ট এ। প্যারামিটার লিস্ট এ আমরা বিভিন্ন ভ্যারিয়েবল ফাংশনে পাঠাই এবং এখানে ভ্যারিয়েবলের ডেটা টাইপ বলে দিতে হয়। ফাংশন কল করার সময় এই ভ্যালুগুলো ইনপুট হিসেবে দিতে হয়। কোন ইনপুট না থাকলে void দেযওয়া হয় প্যারামিটার হিসেবে। প্যারামিটার গুলোকে সরারি ভ্যারিয়েবল হিসেবে ফাংশনের ভেরত থেকে কল করা যায়।</string>
+    <string name="function4">ফাংশনগুলোর একটি নির্দিশ্ট নাম থাকতে হবে। এই ফাংশন নেম ধরেই আমরা ফাংশনটিকে প্রোগ্রামের বিভিন্ন যায়গায় কল করব। ফাংশন নেম আমরা আমাদের পছন্দমত দিতে পারি। তবে ভাল প্র্যাকটিস হল ফাংশনের নামগুলো এমনাভাবে দেওয়া যাতে সেটি পড়ে বোঝা যায় ফাংশনটি কি করে। যেমন ক্ষেত্রফল বের করার ফাংশনটির নাম আমরা finn_area() দিতে পারি আবার klmn() ও দিতে পারি। দুই ক্ষেত্রেই ফাংশনটি ভেতরের ইনস্ট্রাকশন অনুযায়ী কাজ করবে। শুধু একটি ক্ষেত্রে এটি বোঝা সহজ যে ফাংশনটি কি করে আরেকটিতে না।</string>
+    <string name="function3">রিটার্ন টাইপ হল ফাংশন কি ধরনের ভ্যালু আপনাকে ফেরত দিবে। আমরা সাধারণত ফাংশন লিখি কারণ আমরা ফাংশনে কিছু একটা কাজ করে তার ফলাফলটি ফেরত আনতে চাই। রিটার্ন টাইপ হল ফাংশনটি যে ধরনের ভ্যালু ফেরত দেবে তার ডেটা টাইপ। এটি সি এর যে কোন ডাটা টাইপ হতে পারে। সব ফাংশনই যে ভ্যালু রিটার্ন করবে এমন নয়। যদি কোন ফাংশন কোন ভ্যালু রিটার্ন না করে তাহলে তার রিটার্ন টাইপ হবে void</string>
+    <string name="function2">return_type function_name(parameter list)\n
+{\n
+    \t\t\t//Body of the function\n
+    \t\t\t...\n
+}</string>
+    <string name="function1">প্রোগ্রামিং এর ভাষায় ফাংশন হল একটি নির্দিস্ট ধরনের কাজ করে এমন কতগুলো ইন্সট্রাকশনের সমষ্টি। আমরা সি তে কোন কিছু মনিটরে প্রিন্ট করে দেখাতে চাইলে printf() ফাংশনটি ব্যবহার করি। printf() আমাদের দেয়া লিখাটি নিয়ে সেটিকে মনিটরে দেখায়। কিংবা আমরা যদি কোন সংখ্যার বর্গমূল জানতে চাইলে তাহলে math.h থেকে sqrt()ফাংশনটি ব্যবহার করে সেটি জানতে পারি। এগুলোর সবগুলোই এক একটি ফাংশন। এই ফাংশনগুলো বিভিন্ন লাইব্রেরিতে দেওয়া আছে আমাাদের কাজকে সহজ করার জন্য। এর বাইরে আমরা যদি চাই আমাদের নির্দিষ্ট কোন কাজের জন্য একটি ফাংশন লিখতে হবে আমরা সেটিও করতে পারি।\n\n
+
+প্রশ্ন আসতে পারে আমরা কেন নিজেরা ফাংশন লিখতে যাবো? ধরুন আপনাকে একটি বড় প্রোগ্রাম লিখতে হচ্ছে যেখানে বার বার আপনাকে কয়েকটি সংখ্যার গড় বের করতে হবে। গড় বের করার জন্য প্রদত্ত সংখ্যাগুলোকে যোগ করে মোট যতটি সংখ্যা আছে তা দিয়ে ভাগ করলেই আমরা গড় পাই। কিন্তু প্রোগ্রামের মধ্যে যতবার আপনাকে গড় বের করতে হবে প্রতিবার তার জন্য একই ধরনের কোড বার বার লিখাটা বেশ ঝামেলা। আর এভাবে লিখতে থাকলে প্রোগ্রামটির কোডের গঠন ও বেশ অগোছালো হয়ে যায়।\n\n
+
+এই বিষয়টি আমরা সমাধান করতে পারি সহজেই গড় বের করার জন্য একটি ফাংশন লিখে। ফাংশন লিখলে আমরা একবারেই ঠিক করে দেব কিভাবে গড় হিসাব করতে হয় এবং তারপরে আমরা যেখানেই গড় বের করতে যাবো সেখানেই আমরা এই ফাংশনটি কল করতে পারবো এবং সহজেই গড় পেয়ে যাবো। একই সাথে আমাদের প্রগ্রামটির কোডও বেশ গোছানো থাকবে কারণ আমরা বার বার একই ধরনের কোড লিখবো না।\n\n
+
+সি তে দুই ধরণের ফাংশন রয়েছে।\n</string>
+
+
+    <string name="pointer1">
+        সি ল্যাঙ্গুয়েজের একটি বেশ শক্তিশালী ফিচার হল পয়েন্টার। পয়েন্টার দিয়ে ফাংশনের ভেতর থেকে ভ্যারিয়েবল বা অ্যারে পাল্টানো, মেমোরি অ্যালোকেশন সহ বিভিন্ন অ্যাডভান্সড কাজ করা যায়।\n
+        আমরা এর আগে অ্যারের ব্যবহার দেখেছি।
+        অ্যারের একটি বিষয় হল এটির সাইজ প্রথমেই বলে দিতে হয়, পয়েন্টার ব্যবহার করে আমরা চাইলে ডায়নামিক অ্যারে তৈরি করতে পারি যেটির সাইজ প্রোগ্রাম চলার সময়ে ঠিক হবে এবং সে অনুযায়ী মেমোরি অ্যালোকেটেড হবে।
+        পয়েন্টার প্রোগ্রামিং এ দারুন একটি টুল।\n\n
+        পয়েন্টার সম্পর্কে জানার আগে কিছু বেসিক জিনিস জানা যাক, যেগুলো বুঝতে কাজে দিবে।
+    </string>
+    <string name="pointer2">
+        ভ্যারিয়েবল গুলো কিভাবে কম্পিউটার মেমরিতে/ র‍্যাম এ স্টোর হয়?
+    </string>
+    <string name="pointer3">
+        র‍্যাম এর এক একটি সেল এক একটি বাইট। আর প্রত্যেকটা বাইট এর একটি করে এড্রেস রয়েছে। আর প্রতিটা বাইটে ৮টি করে বিট রয়েছে।
+
+    </string>
+    <string name="pointer4">
+        \t#include &lt;stdio.h&gt;\n
+int main()\n
+{\n
+\t\tint a =5;\n
+\t\tprintf(\"Memory address of a is: %x\\n\",&amp;a);\n
+\t\treturn 0;\n
+}
+    </string>
+    <string name="pointer5">
+        উপরের প্রোগ্রামটি রান করালে এমন কিছু দেখাবেঃ Memory address of variable a is: 2686732 ।
+    এক কম্পিউটারে এক এক মান দেখাবে। এবং একবার এক এক ভ্যালু দেখাবে।
+    কারণ যতবারই আমরা প্রোগ্রামটি রান করি, প্রতিবারই ভ্যারিয়েবলটির জন্য মেমরিতে একটা জায়গা বরাদ্ধ করা হয়। আর ঐ জায়গার এড্রেসটা প্রতিবারই পরিবর্তন হয়।
+    </string>
+    <string name="pointer6">
+        মেমোরি এড্রেস সাধারণত হেক্সাডেসিমেল নাম্বার হয়ে থাকে।a এর এড্রেস প্রিন্ট করতে %x ব্যবহার করা হয়েছে,কারণ হেক্সাডেসিমেল সংখ্যা প্রিন্ট করার জন্য
+format specifier হচ্ছে  %x।
+    </string>
+    <string name="pointer7">
+        &amp;[ampersend] দিয়ে কোনো ভ্যারিয়েবলের এড্রেস বুঝায়।এজন্যই scanf দিয়ে কোনো ভ্যারিয়েবলের ভ্যালু ইনপুট নেয়ার সময় ভ্যারিয়েবল নামের আগে &amp;
+লিখা হয়।
+    </string>
+    <string name="pointer8">
+        পয়েন্টার হচ্ছে একটা ভ্যারিয়েবল যার ভ্যালু হচ্ছে আরেকটি ভ্যারিয়েবল এর মেমরি লোকেশন। পয়েন্টার একটা ডেটা,
+    অ্যারে বা ভ্যারিয়েবল এর কম্পিউটার মেমরি লোকেশন রিপ্রেজেন্ট করে বা পয়েন্ট করে।\n\n
+    অন্যান্য ভ্যারিয়েবল এর মত পয়েন্টার ভ্যারিয়েবল ব্যবহার করার আগে কম্পিউটার/ কম্পাইলারকে বলতে হবে এটা একটি পয়েন্টার ভ্যারিয়েবল।
+    পয়েন্টার ভ্যারিয়েবল নিচের মত করে ডিক্লেয়ার করা হয়ঃ
+    </string>
+    <string name="pointer9">
+    যেমন integer পয়েন্টারের জন্যঃ int *i;\n\n
+
+asterisk [*] একটি ভ্যারিয়েবলের আগে ব্যবহার করে পয়েন্টার হিসেবে ডিক্লেয়ার করা হয়। যাকে indirection operator বা value-at-address operator বলা হয়।\n\n
+
+এখন দেখা যাক কিভাবে কোডে পয়েন্টার ব্যবহার করতে হয়ঃ
+    </string>
+    <string name="pointer10">
+    \t#include &lt;stdio.h&gt;\n
+int main ()\n
+{
+\t\tint a = 5; /* variable declaration */\n
+\t\tint *ip; /* pointer variable declaration */\n
+\t\tip = &amp;a; /* store address of \"a\" in pointer variable*/\n
+\t\tprintf(\"Address of a variable: %xn\", &amp;a );\n
+\t\t/* address stored in pointer variable */\n
+\t\tprintf(\"Address stored in ip variable: %xn\", ip );\n
+\t\treturn 0;\n
+}
+    </string>
+    <string name="pointer11">
+    এখানে আমরা একটি ভ্যারিয়েবল a ডিক্লেয়ার করেছি। এরপর একটি পয়েন্টার ভ্যারিয়েবল ডিক্লেয়ার করেছি। তারপর পয়েন্টার ভ্যারিয়েবলে a এর মেমরি এড্রেস রেখেছি।
+    তারপর &amp; অপারেটর দিয়ে a ভ্যারিয়েবল এর এড্রেস প্রিন্ট করে দেখলাম। এবং পয়েন্টার ভ্যারিয়েবল এর ভ্যালু প্রিন্ট করে দেখলাম। উভয় এর মান ই একই।\n\n
+আবার * ব্যবহার করে পয়েন্টার ভ্যারিয়েবল দিয়ে ঐ এড্রেসে থাকা ভ্যারিয়েবলের ভ্যালু প্রিন্ট করা যায়।
+    </string>
+    <string name="pointer12">
+    \t#include &lt;stdio.h&gt;\n
+int main ()\n
+{\n
+\t\tint a = 5;\n
+\t\tint *ip;\n
+\t\tip = &amp;a;\n
+    /* address stored in pointer variable */\n
+\t\tprintf(\"Address stored in ip variable: %x\\n\", ip );\n
+/* access the value using the pointer */\n
+\t\tprintf(\"Value of *ip variable: %d\\n\", *ip );\n
+\t\treturn 0;\n
+}
+    </string>
+    <string name="pointer13">
+    আমরা যখন প্রগ্রামটি রান করব, তখন ip যে ভ্যারিয়েবলটির এড্রেস শো করবে, তারপর a এর মান প্রিন্ট করবে।
+    লক্ষকরি, যখন আমরা পয়েন্টার ভ্যারিয়েবল দিয়ে কোন ভ্যারিয়েবল এর এড্রেস বের করতে চাইবো, তখন শুধু পয়েন্টার ভ্যারিয়েবল লিখলেই হবে।
+    কিন্তু যখন আমরা পয়েন্টার ভ্যারিয়েবল দিয়ে মূল ভ্যারিয়েবল এর ভ্যালু বের করতে চাইবো, তখন পয়েন্টার ভ্যারিয়েবল এর আগে * যোগ করতে হবে।
+    </string>
+    <string name="pointer14">
+    এসাইন করার মত সঠিক এড্রেস যদি না থাকে সেক্ষেত্রে একটি পয়েন্টার ভ্যারিয়েবল এর একটি শূন্য মান নির্ধারণ সবসময় একটি ভাল অভ্যাস।\n এটি ভ্যারিয়েবল ডিক্লেয়ার
+করার সময় সম্পন্ন করা হয়। একটি পয়েন্টার যার ভ্যালু শূন্য তাকে নাল পয়েন্টার বলা হয়।
+    </string>
+    <string name="pointer15">
+    #include &lt;stdio.h&gt;\n
+
+int main ()\n
+{\n
+\t\tint *ptr = NULL;\n
+
+\t\tprintf(\"The value of ptr is : %x\\n\", ptr );\n
+
+\t\treturn 0;\n
+}
+    </string>
+    <string name="pointer16">
+    আমরা যখন একটি ভ্যারিয়েবল ডিক্লেয়ার করার পর যখন প্রোগ্রামটি এক্সিকিউট/রান করি তখন কম্পিউটার ঐ ভ্যারিয়েবল এর জন্য কিছু মেমরি এলোকেট করে। কত বাইট মেমরি এলোকেট করবে, তা নির্ভর করে ঐ ভ্যারিয়েবল এর ডেটা টাইপ এবং কম্পাইলার এর উপর।\n\n
+
+সাধারনত কম্পাইলার গুলো একটা int এর জন্য 4 byte মেমরি এলোকেট করে। তেমনি একটি char ভ্যারিয়েবলের জন্য 1 byte মেমরি এলোকেট করে। floating-point নাম্বার এর জন্য 4 byte মেমরি এলোকেট করে।\n\n
+
+যেমন যখন কম্পিউটার দেখে এমন একটি ডিক্লারেশন int a; তখন এটি বুঝতে পারে এটি একটি ইন্টিজার ভ্যারিয়েবল এবং এর জন্য 4 বাইট মেমরি এলোকেট করা দরকার। তখন র‍্যাম এর খালি যায়গা থেকে এটি এই ইন্টিজারের জন্য 4 বাইট মেমরি এলোকেট করে।\n\n
+
+আমরা সহজেই একটি ভ্যারিয়েবলের মেমরি লোকেশন বের করতে পারি, নিচের প্রোগ্রামটি দেখা যাকঃ
+    </string>
+
+
+    <string name="strtext1">
+        সি প্রোগ্রামিং এ ক্যারেক্টারে (character) এর array কে স্ট্রিং বলা হয়। null(/0) ক্যারেক্টারের মাধ্যমে স্ট্রিং এর সমাপ্তি ঘটে।\nউদাহরনস্বরুপঃ
+    </string>
+    <string name="strtext2">
+    এখানে, \"c string tutorial\" হলো স্ট্রিং (string)। কম্পাইলার যখন স্ট্রিং কে কম্পাইল করে তখন স্ট্রিং এর শেষে একটি null(\'\\0\') ক্যারেক্টার যুক্ত করে দেয়।
+    </string>
+    <string name="strtext3">
+        String ডিক্লেয়ারেশনঃ
+    </string>
+    <string name="strtext4">
+         স্ট্রিং (string) নিয়ে কাজ করার পূর্বে প্রথমে তাদেরকে ডিক্লেয়ার (declare) করতে হবে।
+array কে যে পদ্ধতিতে ডিক্লেয়ার (declare) করা হয় ঠিক একই পদ্ধতিতে স্ট্রিংও ডিক্লেয়ার করা হয়। শুধু পার্থক্য হলো স্ট্রিং char টাইপের।\narray ব্যবহার করে ডিক্লেয়ারেশনঃ
+    </string>
+    <string name="strtext5">
+        pointer ব্যবহার করে ডিক্লেয়ারেশনঃ
+    </string>
+    <string name="strtext6">
+        String ইনিশিয়ালাইজেশনঃ
+    </string>
+    <string name="strtext7">
+        সি প্রোগ্রামিং এ বিভিন্ন পদ্ধতিতে স্ট্রিং ইনিশিয়ালাইজ (initialize) করা যেতে পারে।
+সহজ ও সুবিধার জন্য ইনিশিয়ালাইজেশন (initialization) এবং ডিক্লেয়ারেশন (declaration) উভয় কাজ একই ধাপে করা হয়।\narray ব্যবহার করে
+        কয়েকভাবে স্ট্রিং initialize করা যায়। যেমনঃ\n
+    </string>
+    <string name="strtext8">
+        \t1. char c[] = \"abcd\";\n
+        2. char c[5] = \"abcd\";\n
+	    3. char c[] = {\'a\', \'b\', \'c\', \'d\', \'\\0\'};\n
+        4. char c[5] = {\'a\', \'b\', \'c\', \'d\', \'\\0\'};
+    </string>
+    <string name="strtext9">
+        pointer ব্যবহার করেও স্ট্রিংকে ইনিশিয়ালাইজ (initialize) করা যায়। যেমনঃ\n
+    </string>
+    <string name="strtext10">
+        ইউজার থেকে String ইনপুট নেয়াঃ
+    </string>
+    <string name="strtext11">
+        অন্য সকল ডাটা টাইপের মতই scanf() ফাংশন ব্যবহার করে স্ট্রিং ইনপুট নেয়া  যায়। স্ট্রিং এর ক্ষেত্রে scanf() ফাংশন এর সাহায্যে
+ইনপুট নিলে ভ্যারিয়েবলের আগে &amp; ব্যবহার করতে হয় না। যাইহোক scanf()ফাংশন ব্যবহার করে ইনপুট নিলে স্পেস (space) পাওয়া মাত্রই scanf()ফাংশন এর শেষ হয়।\n
+        ইউজার থেকে scanf()ফাংশন ব্যবহার করে ক্যারেক্টার ইনপুট নেয়ার একটি প্রোগ্রামঃ
+    </string>
+    <string name="strtext12">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tchar name[20];\n
+        \t\tprintf(\"Enter your name: \");\n
+        \t\tscanf(\"%s\", name);\n
+        \t\tprintf(\"Your name is %s.\", name);\n
+        \t\treturn 0;\n}
+    </string>
+    <string name="strtext13">
+        Enter your name: Bill Gates\nYour name is Bill\n\nউপরের প্রোগ্রামে Rahman প্রিন্ট হয়নি কারণ scanf()
+        ফাংশন স্পেসের আগের একটি মাত্র শব্দকে ইনপুট নেয়।\nআমরা getchar() ফাংশন ব্যবহার করে পুরো string ইনপুট নিতে পারি। যেমনঃ\n
+    </string>
+    <string name="strtext14">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tchar name[30], ch;\n
+        \t\tint i = 0;\n
+        \t\tprintf(\"Enter name: \");\n
+        \t\twhile(ch != \'\\n\'){\t//ইউজার enter বাটনে ক্লিক করলে শেষ হবে\n
+        \t\t\t\t\tch = getchar();\n
+        \t\t\t\t\tname[i] = ch;\n
+        \t\t\t\t\ti++;\n\t\t  }\n
+        \t\tname[i] = \'\\0\';\t\t// সবশেষে null ক্যারেক্টার যুক্ত করা\n
+        \t\tprintf(\"Name: %s\", name);\n
+        \t\treturn 0;\n}
+    </string>
+    <string name="strtext15">
+        উপরের প্রোগ্রামে getchar() ফাংশন ব্যবহার করে প্রতিবার একটি করে অক্ষর ইনপুট নিয়ে ch ভ্যারিয়েবলে রাখা হয়। ইউজার enter
+        বাটনে ক্লিক না করা পর্যন্ত এই প্রক্রিয়া চলতেই থাকে। পরিশেষে স্ট্রিং তৈরি করার জন্য শেষে একটি null character যুক্ত করা হয়।
+    </string>
+    <string name="strtext16">
+        লাইব্রেরী ফাংশন ব্যবহার করে ইনপুট আউটপুটঃ
+    </string>
+    <string name="strtext17">
+        সি প্রোগ্রামিং এ স্ট্রিং ইনপুট নেয়া এবং আউটপুট দেখানোর জন্য  পূর্বনির্ধারিত লাইব্রেরী ফাংশন যথাক্রমে
+gets() এবং puts() ব্যবহার করা হয়। gets() লাইব্রেরী ফাংশন ব্যবহার করে পুরো ইনপুট টেক্সটকে রিড (read) করা যায়।
+    </string>
+    <string name="strtext18">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tchar name[30];\n
+        \t\tprintf(\"Enter name: \");\n
+        \t\tgets(name);  //ইউজার থেকে স্ট্রিং read করার জন্য\n
+        \t\tprintf(\"Name: \");\n
+        \t\tputs(name);  //স্ট্রিং outputদেখানোর জন্য\n
+        \t\treturn 0;\n}
+    </string>
+    <string name="strtext19">
+        Enter name: The Goodfellas\nName: The Goodfellas
+    </string>
+    <string name="strtext20">
+        স্ট্রিং এর স্পেশাল কিছু ফাংশন
+    </string>
+    <string name="strtext21">
+        সি প্রোগ্রামিং এ অনেক ধরণের স্ট্রিং অপারেশন রয়েছে যেগুলো ম্যানুয়ালি (manually) করা যায়।
+যেমন- স্ট্রিং এর দৈর্ঘ্য (length) নির্ণয়, স্ট্রিং কপি (copy) করা, দুটি স্ট্রিং এর সংযোগ (concatenation) ইত্যাদি।
+&lt;string.h&gt; হেডার ফাইলে স্ট্রিং এর বিভিন্ন অপারেশনের জন্য অসংখ্য ফাংশন রয়েছে। যেমন-\n
+    </string>
+    <string name="strtext22">
+        নিচে কিছু ফাংশনের কাজ দেয়া হলোঃ\n
+        1.strlen()-> স্ট্রিং (string) এর দৈর্ঘ্য নির্ণয় করে।\n
+        2.strcpy()-> এক স্ট্রিং (string) কে অন্য স্ট্রিং এর মধ্যে কপি(Copy) করে।\n
+        3.strcat()-> দুটি স্ট্রিং এর সংযোগ (Concatenation) ঘটায়।\n
+        4.strcmp()-> দুটি স্ট্রিং এর মধ্যে তুলনা (compare) করে।\n
+        5.strlwr()-> স্ট্রিংকে ছোট হাতের বর্ণে (lowercase) রূপান্তর করে।\n
+        6.strupr()-> স্ট্রিংকে বড় হাতের বর্ণে (uppercase) রূপান্তর করে।\n
+        7.strrev()-> স্ট্রিংকে বিপরীত (reverse) ক্রমে সাজায়।
+    </string>
+    <string name="strtext23">
+        স্ট্রিং এর বিল্ট ইন ফাংশনগুলো নিয়ে কাজ করার জন্য #include&lt;string.h&gt; হেডার ফাইল include করতে হবে।
+    </string>
+    <string name="strtext24">
+        সি strlen() ফাংশনঃ
+    </string>
+    <string name="strtext25">
+        strlen() ফাংশন একটি স্ট্রিং এর দৈর্ঘ্য রিটার্ন করে। ইহা null ক্যারেক্টার (\'\\0\') গণনা করে না।
+	নিচের উদাহরণে strlen() ফাংশনের মাধ্যমে ch[30] স্ট্রিং এর দৈর্ঘ্য নির্ণয় করে হলোঃ
+    </string>
+    <string name="strtext26">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tchar ch[30]={\'G\', \'o\', \'o\', \'d\', \'f\', \'e\', \'l\', \'l\', \'a\', \'s\', \'\\0\'};\n
+        \t\tprintf(\"The length of string is: %d\",strlen(ch));\n}\n
+    </string>
+    <string name="strtext27">
+        আউটপুটঃ\n
+        \t\tThe length of string is: 10
+    </string>
+    <string name="strtext28">
+        সি strcpy() ফাংশনঃ
+    </string>
+    <string name="strtext29">
+        strcpy(destination,source) ফাংশন source স্ট্রিং থেকে স্ট্রিংকে destination এ কপি করে।
+	নিচের উদাহরণে strcpy() ফাংশনের মাধ্যমে ch1[30]  স্ট্রিংকে ch2[30]  স্ট্রিং এর মধ্যে কপি করে দেখানো হলো
+    </string>
+    <string name="strtext30">
+        #include&lt;stdio.h&gt;\nint main()\n{\n
+        \t\tchar ch1[30]={\'G\', \'o\', \'o\', \'d\', \'f\', \'e\', \'l\', \'l\', \'a\', \'s\', \'\\0\'};\n
+        \t\tchar ch2[30];\n
+        \t\tstrcpy(ch2,ch1);\n
+        \t\tprintf(\"Second string is: %s\",ch2);\n}\n
+    </string>
+    <string name="strtext31">
+        আউটপুটঃ\n
+        \t\tSecond string is: Goodfellas
+    </string>
+
+
+    <string name="recursion4"> উপরের প্রোগ্রামে number ভ্যারিয়েবল sum() ফাংশনের মধ্যে দিয়ে আর্গুমেন্ট হিসাবে অতিক্রম হয় এবং main() ফাংশন থেকে sum() ফাংশন প্রাথমিকভাবে কল(call) হয়।\n\n
+
+ধরুন, num এর প্রাথমিক ভ্যালু 3। পরবর্তী ফাংশন কলে sum() ফাংশনের মধ্য দিয়ে 2 অতিক্রম করানো হয়। num এর ভ্যালু 0 এর সমান না হওয়া পর্যন্ত এই প্রক্রিয়া চলতে থাকে।\n\n
+
+যখন num এর ভ্যালু 0 এর সমান হয় তখন if কন্ডিশন ব্যার্থ হয় এবং else অংশ এক্সিকিউশন হয়ে যোগফল main() ফাংশনের কাছে রিটার্ন করে।</string>
+    <string name="recursion3">//রিকার্সন ব্যবহার করে স্বাভাবিক সংখ্যা যোগের জন্য প্রোগ্রাম\n
+#include &lt;stdio.h>\n
+int sum(int num);\n
+
+int main()\n
+{\n
+    \t\tint number, result;\n
+
+    \t\tprintf(\"Enter a positive integer: \");\n
+    \t\tscanf(\"%d\", &amp;number);\n
+
+    \t\tresult = sum(number);\n
+
+    \t\tprintf("sum=%d\n", result);\n
+}\n
+
+int sum(int num)\n
+{\n
+    \t\tif (num!=0)\n
+        \t\t\t// sum() ফাংশন নিজেই নিজেকে কল করে\n
+        \t\t\treturn num + sum(num-1);\n
+    \t\telse\n
+        \t\t\treturn num;\n
+}\n
+</string>
+    <string name="recursion2">প্রতিবন্ধকতা সৃষ্ট করে এমন কিছু কন্ডিশনের দেখা না পাওয়া পর্যন্ত রিকার্সন চলতেই থাকে।\n
+
+অসীম রিকার্সনকে বাধা দেওয়ার জন্য if...else স্টেটমেন্ট অথবা এধরনের অন্য কোনো স্টেটমেন্ট ব্যবহার করা যেতে পারে যেখানে এক অংশ রিকার্সিভ হবে, কিন্তু অন্যান্য অংশ রিকার্সিভ হবে না। </string>
+
+    <string name="recursion1">void recurse()\n
+{\n\t\t\t ... .. ...\n
+    \t\t\trecurse();\n
+    \t\t\t... .. ...\n
+}\n
+
+int main()\n
+{\n
+    \t\t\t... .. ...\n
+    \t\t\trecurse();\n
+    \t\t\t... .. ...\n
+}</string>
+
+
+    <string name="sttext1">
+        সি প্রোগ্রামিং এ স্ট্রাকচার হলো ইউজার ডিফাইন্ড (user defined) ডেটা টাইপ। একটি একক নামের মধ্যে বিভিন্ন ডেটা টাইপ সম্বলিত ভ্যারিয়েবলের
+সংগ্রহ-ই হলো স্ট্রাকচার (structure).\nউদাহরণস্বরূপঃ  একজন ব্যাক্তির(নাম, আইডি এবং ঠিকানা) তথ্য সংগ্রহ করে রাখা দরকার। ব্যাক্তির তথ্য সংগ্রহ করে রাখার জন্য খুব সহজেই
+        বিভিন্ন ভ্যারিয়েবল ক্রিয়েট করা যেতে পারে। যেমন- name, idNo, address ইত্যাদি।\nযাইহোক, এখন যদি অনেক ব্যাক্তির তথ্য সংগ্রহ করে রাখতে হয়
+        তাহলে প্রত্যেক ব্যাক্তির জন্য name1, idNo1, address1, name2, idNo2, address2 ইত্যাদি ভিন্ন ভিন্ন ভ্যারিয়েবল তৈরি করতে হবে।কিন্তু এভাবে
+        কোড করলে কোড অনেক বড় হবে। এখন যদি আমরা সম্পর্কযুক্ত তথ্যগুলোকে একটি একক নাম Person এর মধ্যে সংগ্রহ করে রাখি এবং
+        প্রত্যেক ব্যক্তির জন্য এটি ব্যবহার করি তাহলে কোডের কর্মদক্ষতাও (efficiency) বাড়বে।\nএকটি একক নাম (Person) এর মাধ্যমে সম্পর্কযুক্ত তথ্যসমূহের এই সংগ্রহ-ই হলো স্ট্রাকচার (structure)।
+    </string>
+    <string name="sttext2">
+        সি স্ট্রাকচার ডেফিনিশনঃ
+    </string>
+    <string name="sttext3">
+        struct কীওয়ার্ডের মাধ্যমে স্ট্রাকচার তৈরি করা হয়।\n\nস্ট্রাকচারের সিনট্যাক্স--&gt;
+    </string>
+    <string name="sttext4">
+        struct structure_name\n{\n
+        \t\tdata_type member1;\n
+        \t\tdata_type member2;\n
+        \t\t.\n\t\t\t.\n
+        \t\tdata_type member;\n};
+    </string>
+    <string name="sttext5">
+        নোটঃ  লাইনের শেষে সেমিকোলন(;) দিতে হবে।\n
+    </string>
+    <string name="sttext6">
+        এখন আমরা উপরে দেয়া সিনট্যাক্স এর মত  person নামে একটি স্ট্রাকচার তৈরি করতে পারি। যেমনঃ
+    </string>
+    <string name="sttext7">
+        struct person\n{\n
+        \t\tchar name[50];\n
+        \t\tint idNo;\n
+        \t\tfloat address;\n};
+    </string>
+    <string name="sttext8">
+        স্ট্রাকচার ভ্যারিয়েবল ডিক্লেয়ারেশনঃ
+    </string>
+    <string name="sttext9">
+        যখন কোনো স্ট্রাকচার ডিফাইন্ড করা হয় তখন এটি ইউজার ডিফাইন্ড (user-defined) ডেটা টাইপ তৈরি করে। কিন্তু কোনো মেমোরি বা স্টোরেজ বরাদ্দ
+        হয় না।\n\nউপরের person স্ট্রাকচারের জন্য নিচের মত ভ্যারিয়েবল ডিক্লেয়ার করা যেতে পারেঃ
+    </string>
+    <string name="sttext10">
+        struct person\n{\n
+        \t\tchar name[50];\n
+        \t\tint idNo;\n
+        \t\tfloat address;\n};\n\nint main()\n{\n
+        \t\tstruct person person1;\n
+        \t\treturn 0;\n
+        }
+    </string>
+    <string name="sttext11">
+        স্ট্রাকচারের মেম্বারকে এক্সেস করাঃ
+    </string>
+    <string name="sttext12">
+        স্ট্রাকচারের মেম্বারকে এক্সেস করার জন্য দুই ধরণের অপারেটর রয়েছে।\nযেমনঃ\n1. Member operator(.)\n2. Structure pointer operator(-&gt;)\n\n
+        স্ট্রাকচারের মেম্বার ভ্যারিয়েবলকে নিচের মত এক্সেস (access) করা যায়।
+    </string>
+    <string name="sttext13">
+        \nযদি আমরা person1 ভ্যারিয়েবলের address কে এক্সেস করতে চাই তাহলে এটি নিচের মত এক্সেস করা যায়।
+    </string>
+    <string name="sttext14">
+        স্ট্রাকচারের উদাহরণঃ
+    </string>
+    <string name="sttext15">
+        নিচের প্রোগ্রামে ইউজার ফুট এবং ইঞ্চ ভ্যালু ইনপুট নিবে এবং ইনপুট প্রিন্ট হবে।
+    </string>
+    <string name="sttext16">
+        #include&lt;stdio.h&gt;\nstruct Distance\n{\n
+        \t\tint feet;\n
+        \t\tfloat inch;\n};\n\nint main()\n{\n
+        \t\tstruct Distance dist;\n
+        \t\tprintf(\"Enter distance\\n\");\n
+        \t\t// স্ট্রাকচার ভ্যারিয়েবল dist এর জন্য ফুট ভ্যালু ইনপুট\n
+        \t\tprintf(\"Enter feet: \");\n
+        \t\tscanf(\"%d\", &amp;dist.feet);\n
+        \t\t// স্ট্রাকচার ভ্যারিয়েবল dist এর জন্য  ইঞ্চি ভ্যালু ইনপুট\n
+        \t\tprintf(\"Enter inch: \");\n
+        \t\tscanf(\"%f\", &amp;dist.inch);\n
+        \t\t//dist এর ফুট এবং ইঞ্চি ভ্যালু প্রিন্ট করা\n
+        \t\tprintf(\"Feet and inch is = %d\\\'%.1f\\\"\", dist.feet, dist.inch);\n\t\t\treturn 0;\n}
+
+    </string>
+    <string name="sttext17">
+        আউটপুটঃ
+    </string>
+    <string name="sttext18">
+        \t\tEnter distance\n\t\tEnter feet: 2\n\t\tEnter inch: 4.56\n\t\tFeet and inch is = 2\'4.6\"\n
+    </string>
+</resources>

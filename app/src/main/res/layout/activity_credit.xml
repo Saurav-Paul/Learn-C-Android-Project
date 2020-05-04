@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333131"
+
+    tools:context=".Credit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:textColor="#38d223"
+        android:text="\t\t//Click Run Button to see Credits...\n"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="#38d223"
+        android:text='#include&lt;stdio.h>\nvoid ourGroup();\nvoid credits();\n\nint main()
+ {\n\t\t\t\tcredits();\n\t\t\t\treturn 0;
+\n}\n\nvoid credits()
+\n{\n\t\t\t\tourGroup();\n\n\t\t\t\tprintf("-> Soumik Roy\\n\");\n\t\t\t\tprintf("-> Saurav Paul\\n");\n\t\t\t\tprintf("-> Md. Ariful Islam\\n\");\n}\n\nvoid ourGroup()\n{\n\t\t\t\tprintf(\"\\t--GoodFellas--\\n\\n\");\n}\n
+    '
+
+        android:paddingLeft="20dp"
+         />
+    </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/run"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/floatingCredits"
+
+        />
+</android.support.design.widget.CoordinatorLayout>
